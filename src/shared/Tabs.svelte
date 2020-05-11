@@ -8,9 +8,9 @@
 
 <div class="tabs">
     <ul>
-        {#each itemsTab as item}
-            <li on:click={() => dispatch("tabHandler", item)}>
-                <div class:active={ item === activeTab } >
+        {#each itemsTab as item }
+            <li  on:click={() => dispatch("tabHandler", item)}>
+                <div class:active={ item === activeTab }>
                     {#if item === "Current POLLS" }
                         <p>CURRENT POLLS</p>
                     {:else}

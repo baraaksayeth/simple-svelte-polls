@@ -1,4 +1,5 @@
 <script>
+    import { fade } from "svelte/transition";
     import PollStore from "../stores/PollStore.js";
     import { createEventDispatcher } from "svelte";
 
@@ -53,7 +54,7 @@
     }
 </script>
 
-<form on:submit|preventDefault={addPollHandler}>
+<form on:submit|preventDefault={addPollHandler} in:fade > 
     <FormGroup>
         <label for="name">Question</label>
         <input type="text"  on:change={validationQuestion} placeholder="Entered Your Question" class:error={error.question} bind:value={answer.question} >
