@@ -1,5 +1,6 @@
 <script>
     import PollStore from "../stores/PollStore.js";
+    import { tweened } from "svelte/motion";
 
     import Card from "../shared/Card.svelte";
     import Button from "../shared/formElements/Button.svelte";
@@ -24,8 +25,17 @@
     }
 
     $: totalVote = poll.voteAnswerA + poll.voteAnswerB;
-    $: percentA = Math.round( 100 / totalVote * poll.voteAnswerA )
-    $: percentB = Math.round( 100 / totalVote * poll.voteAnswerB )
+    $: percentA = Math.round( 100 / totalVote * poll.voteAnswerA ) || 0;
+    $: percentB = Math.round( 100 / totalVote * poll.voteAnswerB ) || 0;
+
+    const tweenedA = tweened(0);
+    const tweenedB = tweened(0);
+
+    $: tweenedA.set(percentA);
+    $: tweenedB.set(percentB);
+
+    
+
 </script>
 
 <Card>
@@ -35,11 +45,11 @@
         <p>Total Votes: {totalVote}</p>
         {/if}
         <div class="answer" on:click={() => handleVote("a", poll.id)} >
-            <div class="percent" class:percent-a={poll.showVote} style="width:{percentA}%"></div>
+            <div class="percent" class:percent-a={poll.showVote} style="width:{$tweenedA}%"></div>
             <span>{poll.answerA} {#if poll.showVote} ({percentA}%) {/if}</span>
         </div>
         <div class="answer" on:click={() => handleVote("b", poll.id)} >
-            <div class="percent" class:percent-b={poll.showVote} style="width:{percentB}%" ></div>
+            <div class="percent" class:percent-b={poll.showVote} style="width:{$tweenedB}%" ></div>
             <span>{poll.answerB} {#if poll.showVote} ({percentB}%) {/if}</span>
         </div>
         <div class="delete">
