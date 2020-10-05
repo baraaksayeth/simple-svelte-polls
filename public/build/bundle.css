@@ -1,0 +1,14 @@
+main.svelte-gz4usp{max-width:960px;margin:40px auto}
+footer.svelte-m85kq3{padding:40px;text-align:center}.copyright.svelte-m85kq3{color:#aaa;font-size:14px;display:inline-block;padding:20px;border-top:1px solid #ddd}
+form.svelte-wy7fxh{width:400px;margin:0 auto;text-align:center}input.svelte-wy7fxh{width:100%;border-radius:6px}input.svelte-wy7fxh:focus{border-color:orangered}label.svelte-wy7fxh{margin:10px auto;text-align:left
+    }.error.svelte-wy7fxh{color:red}input.error.svelte-wy7fxh{border-color:red}
+header.svelte-15vxshf{background:#f7f7f7;padding:20px}h1.svelte-15vxshf{text-align:center}p.svelte-15vxshf{color:orangered}
+h3.svelte-15bdrbp{margin:0 auto;color:#555}p.svelte-15bdrbp{margin-top:6px;font-size:14px;margin-bottom:30px;color:#aaa}.answer.svelte-15bdrbp{cursor:pointer;position:relative;background:#fafafa;margin:10px auto}.answer.svelte-15bdrbp:hover{opacity:0.6}span.svelte-15bdrbp{display:inline-block;padding:10px 20px}.percent.svelte-15bdrbp{position:absolute;height:100%;box-sizing:border-box}.percent-a.svelte-15bdrbp{border-left:4px solid #04d4d4;background:#04f3f36b}.percent-b.svelte-15bdrbp{border-left:4px solid #74d604;background:#83f3049c}.delete.svelte-15bdrbp{margin-top:30px}
+.polls-list.svelte-11jjn0p{display:grid;grid-template-columns:1fr 1fr;grid-gap:20px}
+.card.svelte-1xd0tx9{padding:20px;background:#fff;border-radius:6px;box-shadow:0 2px 4px rgba(0, 0, 0, 0.1)}
+.tabs.svelte-ru9zs8{margin-bottom:40px}ul.svelte-ru9zs8{display:flex;justify-content:center;list-style-type:none;padding:0}li.svelte-ru9zs8{margin:0 16px;font-size:18px;color:#555;cursor:pointer}.active.svelte-ru9zs8{color:orangered;border-bottom:1px solid orangered;padding-bottom:7px}
+button.svelte-1e1vtuo{width:5rem;background:white;padding:5px;cursor:pointer}.primary.svelte-1e1vtuo{background:orangered;color:white;border-color:white}.primary.inverse.svelte-1e1vtuo{border-color:orangered;color:orangered;background:white}.primary.inverse.svelte-1e1vtuo:hover,.primary.inverse.svelte-1e1vtuo:focus{background:orangered;color:white;border-color:white}.secondary.svelte-1e1vtuo{background:rgb(21, 219, 71);color:white;border-color:white
+    }.secondary.inverse.svelte-1e1vtuo{border:1px solid rgb(21, 219, 71);color:rgb(21, 219, 71);background:white}.secondary.inverse.svelte-1e1vtuo:hover,.secondary.inverse.svelte-1e1vtuo:focus{background:rgb(21, 219, 71);color:white;border-color:white}
+.form-field.svelte-1y4f467{margin:18px auto}
+
+/*# sourceMappingURL=bundle.css.map */
